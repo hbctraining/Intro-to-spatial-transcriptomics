@@ -20,7 +20,7 @@ seurat_rctd <- qread("intermediates/07_seurat_rctd_unassigned.qs")
 ############################################################
 
 seurat_macro <- subset(seurat_rctd,
-                       first_type == "Macrophage")
+                       first_type == "Myeloid")
 Idents(seurat_macro) <- "orig.ident"
 
 # Calculate DGEs
