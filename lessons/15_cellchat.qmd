@@ -349,7 +349,7 @@ The last computationally heavy step of this workflow is `computeCommunProb()` fu
 4. Compute communication strength for LR and cell type pairs, incorporating spatial weights
 5. Run permutation test for significance testing
 
-::: {.collapse-note collapse="true"}
+::: {.callout-note collapse="true"}
 # Author note on tri-mean
 
 In the [documentation](https://github.com/sqjin/CellChat/blob/master/tutorial/CellChat-vignette.Rmd) for CellChat, the author defines tri-mean like so:
