@@ -425,8 +425,7 @@ This step may take several iterations to run, but it should converge within a fe
 seurat_banksy <- RunHarmony(seurat_banksy,
                             group.by.vars = "orig.ident",
                             reduction = "pca.banksy",
-                            reduction.save = "harmony.banksy",
-                            assay.use = "BANKSY")
+                            reduction.save = "harmony.banksy")
 ```
 
 Once the `RunHarmony()` function has completed successfully, we have a new latent space called `harmony.banksy`. The simplest way to view these values is to consider it a "corrected PCA" and treat is the same way you would use a PCA space. Therefore, we can visualize the `harmony.banksy` space and see if there is a strong effect with `orig.ident` or the B cell marker IGKC.
